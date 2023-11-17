@@ -5,11 +5,16 @@ import org.junit.Test
 import org.junit.Assert.*
 
 /**
- * Example local unit test, which will execute on the development machine (host).
+ * Prueba de unidad local de ejemplo, que se ejecutará en la máquina de desarrollo (host).
  *
- * See [testing documentation](http://d.android.com/tools/testing).
+ * Consulta la [documentación de prueba](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
+
+
+    /**
+     * Prueba de unidad que verifica si la adición es correcta.
+     */
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)

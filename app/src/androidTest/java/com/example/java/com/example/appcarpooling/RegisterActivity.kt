@@ -12,6 +12,13 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * Clase que representa la actividad de registro (RegisterActivity) en la aplicación.
+ */
+
+
+
+
 class RegisterActivity : AppCompatActivity() {
 
     private val retrofit = Retrofit.Builder()
@@ -20,6 +27,13 @@ class RegisterActivity : AppCompatActivity() {
         .build()
 
     private val apiService: ApiService = retrofit.create(ApiService::class.java)
+
+    /**
+     * Método llamado cuando se crea la actividad de registro.
+     *
+     * @param savedInstanceState El estado de la instancia guardado.
+     */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -28,6 +42,10 @@ class RegisterActivity : AppCompatActivity() {
             goToLogin()
         }
     }
+
+    /**
+     * Método que inicia la actividad principal (inicio de sesión).
+     */
 
     private fun goToLogin(){
         val i= Intent(this, MainActivity::class.java)
